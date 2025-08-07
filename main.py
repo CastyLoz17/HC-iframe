@@ -617,8 +617,8 @@ if __name__ == "__main__":
     )
 
     camera = Camera(Vector3(1, 0, -7), radians(0), radians(0), lighting)
-    cube = load_obj("objs/blahaj.obj", scale=2.5)
-    material = load_mtl("objs/blahaj.mtl")
+    cube = load_obj("blahaj.obj", scale=2.5)
+    material = load_mtl("blahaj.mtl")
 
     mouse_locked = True
     momentum = zero3()
@@ -628,3 +628,4 @@ if __name__ == "__main__":
     camera.render(cube, material, fov=90)
     turtle.update()
     turtle.done()
+
